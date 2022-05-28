@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Perspective Homework</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/609/609803.png" type="image/png">
+        <style type="text/css">
+
+            *{
+                perspective:600px;
+            }
+
+            body{
+                height:100vh;
+
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+
+            .container{
+                width:500px;
+
+                background:#f4f4f4;
+                position: relative;
+            }
+
+            span{
+                font-family:sans-serif;
+                font-size:18px;
+                position:absolute;
+                top:85%;
+                left:85%;
+            }
+
+            .div1{
+                width:250px;
+                height:100px;
+                background:linear-gradient(black,silver);
+                box-shadow:-5px 0 10px rgba(0,0,0,0.7);
+
+
+                border:1px solid black;
+                position: relative;
+                padding:10px;
+                
+                margin:auto;
+            }
+            
+            .div2{
+                width:200px;
+                height:100px;
+                color:transparent;
+                background:linear-gradient(black,silver);
+                box-shadow:-5px 0 10px rgba(0,0,0,0.7);
+
+                border:1px solid black;
+
+                position:absolute;
+                top:-100%;
+                left:-20px;
+
+                padding: 50px;
+
+                transform:rotateX(45deg);
+                z-index:1;
+            }
+
+            .div3,.div4{
+                width:50px;
+                height:100px;
+                background:white;
+                border:1px solid black;
+
+
+                position: absolute;
+
+                transition:all 1s;
+            }
+
+            .div3{
+                top:17%;
+                left:28%;
+                box-shadow:5px 0 10px rgba(0,0,0,0.7);
+
+                transform:rotateY(0);
+                transform-origin:left center;
+            }
+
+            .div3:hover{
+                transform:rotateY(-45deg);
+            }
+
+            .div4{
+                top:17%;
+                left:48%;
+                box-shadow:-5px 0 10px rgba(0,0,0,0.7);
+
+
+                transform:rotateY(45deg);
+                transform-origin:right center;
+            }
+
+            .div4:hover{
+                transform:rotateY(0);
+            }
+        </style>
+    </head>
+    <body>
+        <dir class="container">
+
+            <span>WDF5308</span>
+            <div class="div1">DIV1 
+                <div class="div2">DIV2</div>
+                <div class="div3">DIV3</div>
+                <div class="div4">DIV4</div>
+            </div>
+
+        </dir>
+    </body>
+</html>
