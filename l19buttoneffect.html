@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Button Effect</title>
+        <link href="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" rel="icon" type="image/png">
+        <style type="text/css">
+            body{
+                font-family:sans-serif;
+                background-color:#000;
+                height:100vh;
+
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+
+            a{
+                text-decoration:none;
+                color:#fff;
+                font-size:40px;
+                border:5px solid #fff;
+                padding:40px 80px;
+
+                position: relative;
+            }
+
+            a::before{
+                content:'';
+                width:100%;
+                height:30%;
+                background-color:#fff;
+
+                position:absolute;
+                left:0;
+                top:0;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#">Hover Me</a>
+    </body>
+</html>
