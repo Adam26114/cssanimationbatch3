@@ -47,6 +47,10 @@
       top:0;
 
       z-index:1;
+
+      transform:translateY(-100%);
+
+      transition:all 0.5s;
     }
 
     a::after{
@@ -65,8 +69,16 @@
       position: absolute;
       left:0;
       top:0;
+
+      transform:translateY(100%);
       
       z-index:1;
+
+      transition:all 0.5s;
+    }
+
+    a:hover::before,a:hover::after{
+      transform:translateY(0%);
     }
 
     
