@@ -54,16 +54,17 @@
             position: relative;
             transition:padding-right 0.5s;
         }
-
+        
         a span::after{
-            content:'\f118';
+            content:'\f118';/* special escape character မလို့  \ */
             font-family:"Font Awesome 5 Free";
 
             opacity:0;
-
+            
             position:absolute;
             right:0;
             top:0;
+            transition:padding-right 0.5s;
         }
         
         a:hover span::after{
