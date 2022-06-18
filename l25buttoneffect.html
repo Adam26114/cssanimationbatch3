@@ -15,10 +15,30 @@
         .btn{
             width:200px;
             height:60px;
+            color:#fff;
+            background:linear-gradient(
+                60deg,
+                blue,
+                skyblue,
+                blue,
+                skyblue
+            );
+            background-size:300%;
             font-size:20px;
-            border-radius:50%;
+            border-radius:50px;
             border:none;
             cursor: pointer;
+            box-shadow:0 4px 15px rgba(0,0,0,0.4);
+            transition:background-position .5s ease-in-out;
+        }
+
+        .btn:hover{
+            background-position: left;
+        }
+
+        .btn:active{
+            box-shadow:0 1px 15px rgba(0,0,0,0.1);
+            transform:translateY(4px);
         }
     </style>
 </head>
