@@ -28,6 +28,8 @@
             position: relative;
 
             overflow: hidden;
+
+            transition:box-shadow 0.5s;
         }
 
         .btn::before{
@@ -35,22 +37,28 @@
             width:100%;
             height:100%;
             background:linear-gradient(
-                50deg,
+                45deg,
                 transparent,
                 red,
                 transparent
             );
 
             position:absolute;
-            left:0;
+            left:-100%;
             top:0;
-            transform:translateX(-100%);
-            transition:transform 0.5s;
+            transition:left 0.5s;
         }
         
         .btn:hover::before{
-            transform:translateX(100%);
+            left:100%;   
+        }
 
+        .btn:hover{
+                        /* h v b c */
+            box-shadow: 1px 1px 25px red;
+            /* h-offset v-offset blur spread color */
+                        /* h v b s c */
+            box-shadow: 1px 1px 25px 10px red;
         }
     </style>
 </head>
