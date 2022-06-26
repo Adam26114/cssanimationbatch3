@@ -41,8 +41,12 @@
             position:absolute;
             left:-3px;
             top:-3px;
+            
 
             z-index:-1;
+            mix-blend-mode:multiply;
+            
+            transition:all .3s;
         }
 
         a::after{
@@ -56,6 +60,23 @@
             top:3px;
 
             z-index:-1;
+            mix-blend-mode:multiply;
+
+            transition:all .3s;
+        }
+
+        a:hover::before{
+            left:20px;
+            top:-10px;
+
+            box-shadow:10px -10px 0 steelblue;
+        }
+        
+        a:hover::after{
+            left:-3px;
+            top:10px;
+
+            box-shadow:10px -10px 0 skyblue;
         }
     </style>
     
