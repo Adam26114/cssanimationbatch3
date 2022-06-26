@@ -4,10 +4,48 @@
     <title>Button Effect</title>
     <link href="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" rel="icon" type="image/png">
     <style type="text/css">
+        body{
+            font-family:sans-serif;
+            height:100vh;
 
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .btn{
+            background:linear-gradient(
+                200deg,
+                #f9899b,
+                #a528a5
+            );
+            font-size:40px;
+            border:5px;
+            border:none;
+            padding:20px;
+            border-radius:40px;
+
+            position: relative;
+        }
+
+        .btn::after{
+            content:'10% OFF';
+            display:inline-block;
+            font-size:16px;
+            background-color:orange;
+
+            position:absolute;
+            /* left:0;
+            top:0; */
+
+            padding:5px;
+            margin-left:-20px;
+            margin-top:-30px;
+        }
     </style>
 </head>
 <body>
     
+    <button type="button" class="btn">Add to Card</button>
 </body>
 </html>
