@@ -6,9 +6,10 @@
     <style type="text/css">
         body{
             font-family:sans-serif;
-            height:100ch;
+            height:100vh;
 
             background-color:#000;
+            display:flex;
             justify-content:center;
             align-items:center;
         }
@@ -22,6 +23,37 @@
             border:none;
             border-radius:10px;
             cursor: pointer;
+
+            position: relative;
+            transition:all 1s;
+        }
+
+        .btn .line{
+            width:5px;
+            height:5px;
+            background-color:transparent;
+            border-radius:50%;
+
+            position:absolute;
+            left:50%;
+            top:0;
+
+            transform:translate(-50%);
+
+            transition:all 0.5s;
+
+        }
+
+        .btn:hover .line{
+            width:200px;
+            height:80px;
+
+            border-radius:10px;
+            border-bottom:2px solid #f4f4f4;
+        }
+
+        .btn:hover{
+            background-color:#555;
         }
     </style>
 </head>
