@@ -11,6 +11,38 @@
             justify-content:center;
             align-items: center;
         }
+
+        .spinner{
+            width:30px;
+            height:30px;
+
+            animation-name:myspinner;
+            animation-duration:2000ms;
+            animation-timing-function:linear;
+            animation-iteration-count:infinite;
+        }
+
+        @keyframes myspinner {
+            0%{
+                transform:rotate(0turn) scale(1);
+            }
+
+            25%{
+                transform:rotate(1turn) scale(1);
+            }
+            
+            50%{
+                transform:rotate(1turn) scale(1.5);
+            }
+
+            25%{
+                transform:rotate(0turn) scale(1.5);
+            }
+            
+            100%{
+                transform:rotate(0turn) scale(1);
+            }
+        }
     </style>
 </head>
 <body>
