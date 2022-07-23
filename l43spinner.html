@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spinner</title>
+    <link href="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" rel="icon" type="image/png">
+    <style type="text/css">
+        body{
+            height:100vh;
+            background-color:#000;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .spinnerone{
+            width:100px;
+            height:100px;
+            /* background-color:orange; */
+            border-radius:50%;
+            border:15px solid #f1f1f1;
+            border-top:15px solid steelblue;
+
+            animation:myspinner 2s linear infinite;
+        }
+
+        @keyframes myspinner {
+            from{
+                transform:rotate(0d3g);
+            }
+
+            to{
+                transform:rotate(1turn);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="spinnerone"></div>
+    
+</body>
+</html>
