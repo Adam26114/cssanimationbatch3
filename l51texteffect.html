@@ -17,7 +17,48 @@
         }
 
         h1{
-            color:#fff;
+            color:transparent;
+            font-size:3rem;
+            text-transform:uppercase;
+            letter-spacing:10px;
+
+            -webkit-text-stroke:2px red;
+            
+            position:relative;
+
+            overflow: hidden;
+        }
+
+        h1::before{
+            content:'';
+            width:100%;
+            height:100%;
+            background:linear-gradient(
+                90deg,
+                transparent 0%,
+                #000 0%,
+                #000 100%
+            );
+            
+            position: absolute;
+            left:0;
+            top:0;
+
+            animation-name:myani;
+            animation-duration:4s;
+            animation-timing-function:linear;
+            animation-iteration-count:infinite;
+            animation-direction:alternate;
+        }
+
+        @keyframes myani {
+            from{
+                left:100%;
+            }
+
+            to{
+                left:0;
+            }
         }
     </style>
 </head>
